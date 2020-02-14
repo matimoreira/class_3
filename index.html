@@ -5,23 +5,37 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/9c0d9f5890.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body class="pt-4 p-2 bg-light">
+	<!-- action bar -->
 	<div class="container-fluid mb-4">
-		<div class="topnav text-white bg-dark w-100 p-2 d-flex">
+		<!-- <div class="topnav text-white bg-dark w-100 p-2 d-flex">
 			<a  class="px-4 py-1 text-white" href="">Link</a>
 			<a class="px-4 py-1 text-white" href="">Link</a>
 			<a class="px-4 py-1 text-white" href="">Link</a>
 			<a class="ml-auto px-4 py-1 text-white" href="" id="link-right">Link</a>
-		</div>
-		<div class="headee text-center w-100 p-5 bg-white">
+		</div> -->
+
+		<nav class="navbar navbar-dark bg-dark">
+			<span style="font-size: 1.6rem;">
+				<span style="color: Mediumslateblue;">
+					<i class="fab fa-bootstrap"></i>
+				</span>
+			</span>
+			<a class="navbar-brand px-1 py-1" href="#">Bootstrap</a>
+			<a class="navbar-brand px-4 py-1" href="">Link</a>
+			<a class="navbar-brand px-4 py-1" href="">Link</a>
+			<a class="ml-auto navbar-brand px-4 py-1" href="" id="link-right">Link</a>
+		</nav>
+		<div class="header text-center w-100 p-5 bg-white">
 			<h1 class="display-4 font-weight-normal">Titulo de la pagina</h1>
 			<p>Algún subtítulo atrapante</p>
 		</div>
 	</div>
-
 	
+	<!-- body -->
 	<div class="container-fluid">
 		<div class="row d-flex">
 			<div class="leftcolumn col-md-9">
@@ -29,7 +43,7 @@
 					<div class="card-body">
 						<h2 class="card-title">TITULO DE CABECERA</h2>
 						<h5 class="card-subtitle mb-2 text-muted">Descripcion, 9 Ago, 2020</h5>
-						<div class="bg-secondary card-img" style="height: 200px">Imagen</div>
+						<div class="bg-secondary card-img p-5 display-1 text-center">Imagen</div>
 						<p class="card-text font-weight-bolder">Texto de prueba</p>
 						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis sequi voluptatum enim. Perferendis maxime omnis dolores impedit provident officia quasi unde ex fugit vero, deleniti! Ullam ipsa aperiam provident.</p>
 					</div>
@@ -37,8 +51,8 @@
 				<div class="card mb-4">
 					<div class="card-body">
 						<h2 class="card-title">TITULO DE CABECERA</h2>
-						<h5 class="card-subtitle mv-2 text-muted">Descripcion, 10 Ago, 2020</h5>
-						<div class="bg-secondary card-img" style="height: 200px">Imagen</div>
+						<h5 class="card-subtitle mb-2 text-muted">Descripcion, 10 Ago, 2020</h5>
+						<div class="bg-secondary card-img p-5 display-1 text-center" >Imagen</div>
 						<p class="card-text font-weight-bolder" >Texto de prueba</p>
 						<p class="card-text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nesciunt, aspernatur ad unde consequatur rerum impedit, eaque, a ea mollitia voluptatum provident. Eum quia omnis, maiores officia dolores tempore earum.</p>
 					</div>
@@ -48,33 +62,42 @@
 				<div class="card mb-4">
 					<div class="card-body">
 						<h2 class="card-title">Acerca de Nosotros</h2>
-						<div class="card-img bg-secondary" style="height: 100px">Imagen</div>
+						<div class="card-img bg-secondary p-5 text-center" >Imagen</div>
 						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia debitis doloribus earum similique ducimus architecto reiciendis et laudantium esse quos modi laboriosam iste, distinctio quo labore repellendus dicta nam, rerum.</p>
 					</div>
 				</div>
 				<div class="card mb-4">
-					<h3>Lo mas leído</h3>
-					<div class="fakeimg card-img">
-						<p>Imagen</p>
-					</div>
-					<div class="fakeimg card-img">
-						<p>Imagen</p>
-					</div>
-					<div class="fakeimg card-img">
-						<p>Imagen</p>
+					<div class="card-body">
+						<h3>Lo mas leído</h3>
+						<div class="fakeimg card-img">
+							<p>Imagen</p>
+						</div>
+						<div class="fakeimg card-img">
+							<p>Imagen</p>
+						</div>
+						<div class="fakeimg card-img">
+							<p>Imagen</p>
+						</div>
 					</div>
 				</div>
 				<div class="card mb-4">
-					<h3>Seguinos</h3>
-					<p>Links.</p>
+					<div class="card-body">
+						<h3 class="card-title">Seguinos</h3>
+						<!-- <p class="card-text font-weight-bolder text-muted">Links.</p> -->
+						<button type="button" class="btn btn-secondary btn-block">Links</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="footer">
-		<h2>Footer</h2>
+	<!-- footer -->
+	<div class="container-fluid mb-4">
+		<div class="footer p-5 w-100 bg-secondary text-center text-white">
+			<h2>Footer</h2>
+		</div>	
 	</div>
+	
 
 </body>
 </html>
